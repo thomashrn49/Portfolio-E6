@@ -1,0 +1,54 @@
+const particlesContainer = document.getElementById("particles");
+const navLinks = document.querySelectorAll(".navbar a");
+const sections = document.querySelectorAll("main section[id]");
+
+const particleColors = ["blue", "gold"];
+
+function createParticle() {
+  if (!particlesContainer) return;
+
+  const particle = document.createElement("span");
+  const size = Math.random() * 8 + 6;
+  const color = particleColors[Math.floor(Math.random() * particleColors.length)];
+
+  particle.classList.add("particle", color);
+  particle.style.width = `${size}px`;
+  particle.style.height = `${size}px`;
+  particle.style.left = `${Math.random() * 100}%`;
+  particle.style.top = `${Math.random() * 100 + 10}%`;
+  particle.style.animationDuration = `${Math.random() * 7 + 10}s`;
+  particle.style.animationDelay = `${Math.random() * 2}s`;
+
+  particlesContainer.appendChild(particle);
+
+  setTimeout(() => {
+    particle.remove();
+  }, 17000);
+}
+
+for (let i = 0; i < 18; i++) {
+  createParticle();
+}
+
+setInterval(createParticle, 900);
+
+function updateActiveNav() {
+  let currentSectionId = "accueil";
+  const scrollPosition = window.scrollY + 140;
+
+  sections.forEach((section) => {
+    if (scrollPosition >= section.offsetTop) {
+      currentSectionId = section.id;
+    }
+  });
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === `#${currentSectionId}`) {
+      link.classList.add("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", updateActiveNav);
+window.addEventListener("load", updateActiveNav);

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Thomas Hiron</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="background-grid"></div>
+  <div class="background-glow glow-1"></div>
+  <div class="background-glow glow-2"></div>
+  <div class="particles" id="particles"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="#accueil" class="logo">
+        <span class="logo-mark"></span>
+        <span class="logo-text">Portfolio</span>
+      </a>
+
+      <nav class="navbar">
+        <a href="#accueil" class="active">Accueil</a>
+        <a href="#about">À propos</a>
+        <a href="#formation">Formation</a>
+        <a href="#skills">Compétences</a>
+        <a href="#docs">Documentations</a>
+        <a href="#veille">Veille</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="accueil" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <div class="hero-badge">
+            BTS SIO SISR • Administrateur systèmes & réseaux
+          </div>
+
+          <h1 class="hero-title">
+            Thomas<br>
+            <span>Hiron</span>
+          </h1>
+
+          <p class="hero-text">
+            Je construis un parcours orienté <strong>infrastructure IT</strong>,
+            <strong>administration système</strong> et <strong>cybersécurité</strong>.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#formation" class="btn btn-primary">Voir ma formation</a>
+            <a href="#contact" class="btn btn-secondary">Me contacter</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="info-card">
+            <p class="card-label">Présentation</p>
+            <p class="card-text">
+              Étudiant en <strong>BTS SIO SISR</strong>, je développe mes compétences
+              en <strong>sécurité réseau</strong>, <strong>virtualisation</strong>,
+              <strong>gestion de serveurs</strong> et <strong>support infrastructure</strong>.
+            </p>
+          </div>
+
+          <div class="mini-stats">
+            <div class="stat-box">
+              <span class="stat-value">BTS SIO</span>
+              <span class="stat-name">Formation</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-value">SISR</span>
+              <span class="stat-name">Option</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-value">IT / Cyber</span>
+              <span class="stat-name">Spécialité</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="section-heading">
+      <h2>À propos de moi</h2>
+      <p>
+        Découvrez mon parcours, mes compétences et ma passion pour l’informatique
+      </p>
+    </div>
+
+    <div class="about-layout">
+      <aside class="about-profile-card">
+        <div class="about-photo-ring">
+          <img src="./photo_porte_folio.png" alt="Photo de profil de Thomas" class="about-photo">
+        </div>
+
+        <h3>Thomas Hiron</h3>
+        <p class="about-role">Étudiant en BTS SIO SISR</p>
+
+        <ul class="about-contact-list">
+          <li>📍 Angers, France</li>
+          <li>✉️ thomashironpro@gmail.com</li>
+          <li>🌐 github.com/tonprofil</li>
+        </ul>
+
+        <div class="about-stats">
+          <div class="about-stat-box">
+            <strong>2</strong>
+            <span>Années d’études</span>
+          </div>
+          <div class="about-stat-box">
+            <strong>15+</strong>
+            <span>Documentations</span>
+          </div>
+          <div class="about-stat-box">
+            <strong>1</strong>
+            <span>Expériences pro</span>
+          </div>
+          <div class="about-stat-box">
+            <strong>2</strong>
+            <span>ans d'alternance</span>
+          </div>
+        </div>
+
+        <a href="#" class="about-cv-btn">Télécharger mon CV</a>
+      </aside>
+
+      <div class="about-content">
+        <div class="about-main-card">
+          <div class="about-card-title">
+            <span class="about-card-icon">👤</span>
+            <h3>Qui suis-je ?</h3>
+          </div>
+
+          <p>
+            Je suis un étudiant passionné en BTS SIO avec une spécialisation en SISR.
+            Ma formation me permet d’acquérir des compétences techniques solides dans
+            la conception, le déploiement et la maintenance d’infrastructures informatiques.
+          </p>
+
+          <p>
+            Mon objectif est de devenir administrateur systèmes & réseaux et de renforcer
+            progressivement mes compétences en cybersécurité, virtualisation et gestion
+            des services informatiques.
+          </p>
+        </div>
+
+        <div class="about-bottom-grid">
+          <div class="about-small-card">
+            <h3>Points forts</h3>
+            <ul>
+              <li>Autonomie</li>
+              <li>Rigueur</li>
+              <li>Esprit d’équipe</li>
+              <li>Capacité d’adaptation</li>
+            </ul>
+          </div>
+
+          <div class="about-small-card">
+            <h3>Centres d’intérêt</h3>
+            <ul>
+              <li>Cybersécurité</li>
+              <li>Nouvelles technologies</li>
+              <li>Infrastructure IT</li>
+              <li>Veille numérique</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="formation" class="formation-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">Parcours</span>
+          <h2>Formation</h2>
+          <p>
+            Mon parcours académique initial et en informatique, systèmes, réseaux et cybersécurité.
+          </p>
+        </div>
+
+        <div class="formation-layout">
+          <aside class="formation-side">
+            <div class="profile-card">
+              <div class="profile-photo-wrap">
+                <img src="./photo_porte_folio.png" alt="Photo de profil de Thomas" class="profile-photo">
+              </div>
+
+              <h3>Thomas Hiron</h3>
+              <p class="profile-role">Étudiant en BTS SIO SISR</p>
+
+              <ul class="profile-infos">
+                <li>Localisation : Angers</li>
+                <li>Spécialité : Systèmes & Réseaux</li>
+                <li>Objectif : Infrastructure & cybersécurité</li>
+              </ul>
+            </div>
+          </aside>
+
+          <div class="formation-timeline">
+            <article class="formation-card">
+              <span class="formation-date">2025 - 2027</span>
+              <h3>BTS SIO – Option SISR</h3>
+              <p class="formation-school">Mydigitalschool Campus Angers</p>
+              <p class="formation-text">
+                Formation STMG en gestion et management, puis spécialisation BTS SIO
+                SISR en administration système, réseau, virtualisation et cybersécurité.
+              </p>
+              <div class="formation-tags">
+                <span>Windows Server</span>
+                <span>Réseau</span>
+                <span>Virtualisation</span>
+                <span>Cybersécurité</span>
+              </div>
+            </article>
+
+            <article class="formation-card">
+              <span class="formation-date">2019 - 2021</span>
+              <h3>Baccalauréat technologique STMG</h3>
+              <p class="formation-school">Lycée Polyvalent Chevrollier Angers</p>
+              <p class="formation-text">
+                Base solide en gestion, management et économie d'entreprise, avec une base solide
+                en environnement numérique et logique de travail.
+              </p>
+              <div class="formation-tags">
+                <span>Numérique</span>
+                <span>Méthode</span>
+                <span>Analyse</span>
+              </div>
+            </article>
+
+            <article class="formation-card">
+              <span class="formation-date">Objectif</span>
+              <h3>Évolution professionnelle</h3>
+              <p class="formation-school">Infrastructure & sécurité</p>
+              <p class="formation-text">
+                Développer une expertise concrète en administration systèmes, sécurisation
+                des environnements, supervision et architecture réseau.
+              </p>
+              <div class="formation-tags">
+                <span>Infrastructure</span>
+                <span>Sécurité</span>
+                <span>Administration</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Compétences Techniques</h2>
+          <p>
+            Découvrez mes compétences techniques acquises à travers ma formation BTS SIO SISR
+            et mes expériences professionnelles en administration système et réseau
+          </p>
+        </div>
+
+        <div class="skills-category">
+          <div class="skills-category-header">
+            <div class="skills-category-icon">🛠️</div>
+            <h3>Support et mise à disposition des services informatiques</h3>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card">
+              <div class="skill-logo">🪟</div>
+              <h4>Windows Server</h4>
+              <p>
+                Compétence acquise en BTS SIO SISR via des TP et projets. Installation
+                et configuration de services AD et DHCP sur des VM.
+              </p>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-logo">🪟</div>
+              <h4>Windows 11</h4>
+              <p>
+                Expérience personnelle et en environnement de test. Installation,
+                configuration système, gestion des comptes utilisateurs et dépannage.
+              </p>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-logo">🪟</div>
+              <h4>Windows 10</h4>
+              <p>
+                Expérience personnelle et en environnement de test. Installation,
+                configuration système, gestion des comptes utilisateurs et dépannage.
+              </p>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-logo">🐧</div>
+              <h4>Linux</h4>
+              <p>
+                Autoformation et BTS : installation/configuration sur Debian, Arch Linux
+                et Ubuntu. Expérience sur dual boot et environnements virtualisés.
+              </p>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-logo">🧰</div>
+              <h4>GLPI</h4>
+              <p>
+                Utilisé dans le cadre du BTS. Installation, configuration de base,
+                gestion des tickets et inventaire de parc informatique simulé.
+              </p>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-logo">🌐</div>
+              <h4>Active Directory</h4>
+              <p>
+                Manipulation dans des environnements de TP. Création de comptes,
+                groupes, stratégies de sécurité et GPO.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <div class="skills-category-header">
+            <div class="skills-category-icon">🔧</div>
+            <h3>Administration des systèmes et des réseaux</h3>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card">
+              <div class="skill-logo">🖥️</div>
+              <h4>Proxmox</h4>
+              <p>
+                Virtualisation de serveurs via Proxmox durant les projets de BTS.
+                Création de VM, configuration de clusters, snapshots.
+              </p>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-logo">📡</div>
+              <h4>Cisco</h4>
+              <p>
+                TP sur Packet Tracer en BTS SIO SISR : configuration de routeurs,
+                VLAN, adressage IP, routage statique/dynamique.
+              </p>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-logo">💿</div>
+              <h4>VMware</h4>
+              <p>
+                Utilisé pour la virtualisation d’environnements Windows/Linux lors de
+                projets personnels et en laboratoire scolaire.
+              </p>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-logo">📦</div>
+              <h4>VirtualBox</h4>
+              <p>
+                Utilisé pour la virtualisation d’environnements Windows/Linux lors de
+                projets personnels et en laboratoire scolaire.
+              </p>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-logo">🗄️</div>
+              <h4>MySQL</h4>
+              <p>
+                Manipulation via projets Web et TP SQL. Création de bases de données,
+                gestion des utilisateurs, sécurisation.
+              </p>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-logo">🛰️</div>
+              <h4>DNS</h4>
+              <p>
+                TP BTS : configuration de zones DNS, résolution de noms, intégration
+                avec Active Directory.
+              </p>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-logo">📍</div>
+              <h4>DHCP</h4>
+              <p>
+                Mis en place sur Windows Server et Debian en TP pour l’attribution
+                automatique d’adresses IP.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <div class="skills-category-header">
+            <div class="skills-category-icon">🛡️</div>
+            <h3>Cybersécurité des services informatiques</h3>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card">
+              <div class="skill-logo">🦈</div>
+              <h4>Wireshark</h4>
+              <p>
+                Utilisé pour analyser le trafic réseau dans le cadre de TP de sécurité
+                au BTS. Observation de trames, détection d’anomalies.
+              </p>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-logo">🐉</div>
+              <h4>Kali Linux</h4>
+              <p>
+                Autoformation à l’éthique hacking. Tests basiques (Nmap,
+                reconnaissance réseau) dans des environnements isolés.
+              </p>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-logo">🔒</div>
+              <h4>VPN</h4>
+              <p>
+                Mise en place d’un VPN simple pour un projet personnel. Concepts
+                abordés : chiffrement, tunnels, sécurité réseau.
+              </p>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-logo">🚫</div>
+              <h4>Pare-feu</h4>
+              <p>
+                Notions acquises en BTS. Configuration initiale de règles UFW/IPTables.
+                En cours d’approfondissement.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="docs" class="placeholder-section">
+      <div class="container">
+        <h2>Documentations</h2>
+        <p>Section à compléter ensemble ensuite.</p>
+      </div>
+    </section>
+
+    <section id="veille" class="placeholder-section">
+      <div class="container">
+        <h2>Veille</h2>
+        <p>Section à compléter ensemble ensuite.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="placeholder-section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Section à compléter ensemble ensuite.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
