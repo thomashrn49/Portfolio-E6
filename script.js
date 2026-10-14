@@ -164,18 +164,6 @@ loadCertFrFeed();
 // Pour ajouter un document : déposer le PDF dans le dossier du site puis ajouter un objet ci-dessous.
 const docsData = [
   {
-    title: "Installation de GLPI",
-    description: "Procédure d'installation et de configuration de GLPI sur un serveur Linux, pour la gestion de parc et le suivi des tickets.",
-    category: "technique",
-    categoryLabel: "Guide technique",
-    tags: ["Linux", "GLPI", "Serveur", "Installation", "Configuration"],
-    image: "./GLPI LOGO.png",
-    pdfPath: "./install-GLPI.pdf",
-    downloadName: "Procedure-installation-GLPI.pdf",
-    pages: 18,
-    size: "1,4 Mo"
-  },
-  {
     title: "VPN site à site IPsec",
     description: "Procédure de mise en place d'un tunnel VPN IPsec site à site entre deux pare-feu pfSense pour relier deux réseaux de manière chiffrée.",
     category: "technique",
