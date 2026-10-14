@@ -161,61 +161,91 @@ async function loadCertFrFeed() {
 loadCertFrFeed();
 
 // DOCUMENTATION SECTION
+// Pour ajouter un document : déposer le PDF dans le dossier du site puis ajouter un objet ci-dessous.
 const docsData = [
   {
-    id: 1,
     title: "Installation de GLPI",
-    description: "Installation et configuration de GLPI",
+    description: "Procédure d'installation et de configuration de GLPI sur un serveur Linux, pour la gestion de parc et le suivi des tickets.",
     category: "technique",
     categoryLabel: "Guide technique",
     tags: ["Linux", "GLPI", "Serveur", "Installation", "Configuration"],
     image: "./GLPI LOGO.png",
-    pdfPath: "./install-GLPI.pdf"
+    pdfPath: "./install-GLPI.pdf",
+    downloadName: "Procedure-installation-GLPI.pdf",
+    pages: 18,
+    size: "1,4 Mo"
   }
 ];
 
-function renderDocsCards(filter = "all") {
-  const docsGrid = document.getElementById("docs-grid");
-  const filteredData = filter === "all" ? docsData : docsData.filter(doc => doc.category === filter);
+const docsGrid = document.getElementById("docs-grid");
+const docsFilters = document.querySelectorAll(".docs-filter");
 
-  docsGrid.innerHTML = filteredData.map(doc => `
+function createDocsCard(doc) {
+  const metas = ["PDF", doc.pages && `${doc.pages} pages`, doc.size].filter(Boolean).join(" · ");
+
+  return `
     <article class="docs-card" data-category="${doc.category}">
       <div class="docs-card-image">
-        <img src="${doc.image}" alt="${doc.title}">
+        <img src="${encodeURI(doc.image)}" alt="" loading="lazy">
         <span class="docs-card-category">${doc.categoryLabel}</span>
-        <div class="docs-card-tags">
-          ${doc.tags.map(tag => `<span class="docs-card-tag">${tag}</span>`).join("")}
-        </div>
       </div>
       <div class="docs-card-body">
         <h3 class="docs-card-title">${doc.title}</h3>
+        <p class="docs-card-meta">${metas}</p>
         <p class="docs-card-description">${doc.description}</p>
+        <ul class="docs-card-tags" aria-label="Mots-clés">
+          ${doc.tags.map((tag) => `<li class="docs-card-tag">${tag}</li>`).join("")}
+        </ul>
         <div class="docs-card-actions">
-          <button class="docs-card-action-btn" data-pdf="${doc.pdfPath}" aria-label="Voir le document PDF">
-            Voir le document
-          </button>
-          <a href="${doc.pdfPath}" download class="docs-card-action-btn docs-card-download" aria-label="Télécharger le PDF" title="Télécharger le PDF">⬇</a>
+          <a
+            class="docs-card-action-btn docs-card-view"
+            href="${encodeURI(doc.pdfPath)}"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Voir le document ${doc.title} dans un nouvel onglet"
+          >
+            <span aria-hidden="true">↗</span> Voir le document
+          </a>
+          <a
+            class="docs-card-action-btn docs-card-download"
+            href="${encodeURI(doc.pdfPath)}"
+            download="${doc.downloadName || ""}"
+            aria-label="Télécharger le document ${doc.title}"
+          >
+            <span aria-hidden="true">⬇</span> Télécharger
+          </a>
         </div>
       </div>
     </article>
-  `).join("");
-
-  attachDocsCardListeners();
+  `;
 }
 
-function attachDocsCardListeners() {
-  document.querySelectorAll(".docs-card-action-btn:not(.docs-card-download)").forEach(btn => {
-    btn.addEventListener("click", () => {
-      const pdfPath = btn.getAttribute("data-pdf");
-      openPdfModal(pdfPath);
-    });
+function renderDocsCards(filter = "all") {
+  if (!docsGrid) return;
+
+  const filteredData = filter === "all" ? docsData : docsData.filter((doc) => doc.category === filter);
+
+  docsGrid.innerHTML = filteredData.length
+    ? filteredData.map(createDocsCard).join("")
+    : `<p class="docs-empty">Aucune documentation dans cette catégorie pour le moment.</p>`;
+}
+
+function updateDocsFilterCounts() {
+  docsFilters.forEach((filter) => {
+    const category = filter.getAttribute("data-filter");
+    const count = category === "all"
+      ? docsData.length
+      : docsData.filter((doc) => doc.category === category).length;
+
+    if (!filter.dataset.label) filter.dataset.label = filter.textContent.trim();
+    filter.innerHTML = `${filter.dataset.label} <span class="docs-filter-count">${count}</span>`;
   });
 }
 
 function setupDocsFilters() {
-  document.querySelectorAll(".docs-filter").forEach(filter => {
+  docsFilters.forEach((filter) => {
     filter.addEventListener("click", () => {
-      document.querySelectorAll(".docs-filter").forEach(f => {
+      docsFilters.forEach((f) => {
         f.classList.remove("docs-filter-active");
         f.setAttribute("aria-pressed", "false");
       });
@@ -226,97 +256,7 @@ function setupDocsFilters() {
   });
 }
 
-// PDF MODAL FUNCTIONALITY
-let pdfDoc = null;
-let currentPage = 1;
-let zoomLevel = 1;
-const pdfModal = document.getElementById("pdf-modal");
-const pdfCanvas = document.getElementById("pdf-canvas");
-const pdfCtx = pdfCanvas.getContext("2d");
-const pdfPageInput = document.getElementById("pdf-page-input");
-const pdfTotalPages = document.getElementById("pdf-total-pages");
-const pdfZoomLevel = document.getElementById("pdf-zoom-level");
-const pdfOpenNewTab = document.getElementById("pdf-open-new-tab");
-
-async function openPdfModal(pdfPath) {
-  try {
-    pdfDoc = await pdfjsLib.getDocument(pdfPath).promise;
-    currentPage = 1;
-    zoomLevel = 1;
-    pdfTotalPages.textContent = ` / ${pdfDoc.numPages}`;
-    pdfPageInput.max = pdfDoc.numPages;
-    document.getElementById("pdf-modal-title").textContent = pdfPath.split("/").pop();
-    pdfOpenNewTab.href = pdfPath;
-    pdfModal.showModal();
-    renderPdfPage(currentPage);
-  } catch (error) {
-    console.error("Erreur chargement PDF:", error);
-    alert("Impossible de charger le PDF");
-  }
-}
-
-async function renderPdfPage(pageNum) {
-  if (!pdfDoc) return;
-  try {
-    const page = await pdfDoc.getPage(pageNum);
-    const viewport = page.getViewport({ scale: zoomLevel });
-    pdfCanvas.width = viewport.width;
-    pdfCanvas.height = viewport.height;
-    await page.render({ canvasContext: pdfCtx, viewport }).promise;
-    pdfPageInput.value = pageNum;
-  } catch (error) {
-    console.error("Erreur rendu page:", error);
-  }
-}
-
-document.getElementById("pdf-prev").addEventListener("click", () => {
-  if (currentPage > 1) {
-    currentPage--;
-    renderPdfPage(currentPage);
-  }
-});
-
-document.getElementById("pdf-next").addEventListener("click", () => {
-  if (pdfDoc && currentPage < pdfDoc.numPages) {
-    currentPage++;
-    renderPdfPage(currentPage);
-  }
-});
-
-pdfPageInput.addEventListener("change", () => {
-  const pageNum = parseInt(pdfPageInput.value);
-  if (pdfDoc && pageNum > 0 && pageNum <= pdfDoc.numPages) {
-    currentPage = pageNum;
-    renderPdfPage(currentPage);
-  }
-});
-
-document.getElementById("pdf-zoom-out").addEventListener("click", () => {
-  if (zoomLevel > 0.5) {
-    zoomLevel -= 0.1;
-    pdfZoomLevel.textContent = Math.round(zoomLevel * 100) + "%";
-    renderPdfPage(currentPage);
-  }
-});
-
-document.getElementById("pdf-zoom-in").addEventListener("click", () => {
-  if (zoomLevel < 2) {
-    zoomLevel += 0.1;
-    pdfZoomLevel.textContent = Math.round(zoomLevel * 100) + "%";
-    renderPdfPage(currentPage);
-  }
-});
-
-document.querySelector(".pdf-modal-close").addEventListener("click", () => {
-  pdfModal.close();
-});
-
-pdfModal.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") {
-    pdfModal.close();
-  }
-});
-
 // Initialize
+updateDocsFilterCounts();
 renderDocsCards();
 setupDocsFilters();

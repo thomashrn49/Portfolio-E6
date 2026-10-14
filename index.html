@@ -11,9 +11,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./style.css" />
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-  <script>pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";</script>
 </head>
 <body id="top">
   <div class="background-grid"></div>
@@ -609,7 +606,7 @@
           </p>
         </div>
 
-        <div class="docs-filters">
+        <div class="docs-filters" role="group" aria-label="Filtrer les documentations">
           <button class="docs-filter docs-filter-active" data-filter="all" aria-pressed="true">
             Tous
           </button>
@@ -627,39 +624,11 @@
           </button>
         </div>
 
-        <div class="docs-grid" id="docs-grid">
+        <div class="docs-grid" id="docs-grid" aria-live="polite">
           <!-- Les cartes seront générées par JavaScript -->
         </div>
       </div>
     </section>
-
-    <dialog id="pdf-modal" class="pdf-modal">
-      <div class="pdf-modal-content">
-        <div class="pdf-modal-header">
-          <h2 id="pdf-modal-title">Document</h2>
-          <button class="pdf-modal-close" aria-label="Fermer le PDF">&times;</button>
-        </div>
-
-        <div class="pdf-modal-controls">
-          <button id="pdf-prev" aria-label="Page précédente" title="Page précédente">❮</button>
-          <span class="pdf-page-info">
-            <input id="pdf-page-input" type="number" min="1" value="1" aria-label="Numéro de page">
-            <span id="pdf-total-pages"> / 1</span>
-          </span>
-          <button id="pdf-next" aria-label="Page suivante" title="Page suivante">❯</button>
-          <div class="pdf-zoom-controls">
-            <button id="pdf-zoom-out" aria-label="Zoom moins" title="Zoom moins">−</button>
-            <span id="pdf-zoom-level">100%</span>
-            <button id="pdf-zoom-in" aria-label="Zoom plus" title="Zoom plus">+</button>
-          </div>
-          <a id="pdf-open-new-tab" href="#" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir dans un nouvel onglet" title="Ouvrir dans un nouvel onglet">⧉</a>
-        </div>
-
-        <div class="pdf-viewer-container">
-          <canvas id="pdf-canvas" class="pdf-canvas"></canvas>
-        </div>
-      </div>
-    </dialog>
 
     <section id="veille" class="placeholder-section">
       <div class="container">
