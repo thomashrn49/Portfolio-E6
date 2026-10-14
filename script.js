@@ -174,6 +174,30 @@ const docsData = [
     downloadName: "Procedure-installation-GLPI.pdf",
     pages: 18,
     size: "1,4 Mo"
+  },
+  {
+    title: "VPN site à site IPsec",
+    description: "Procédure de mise en place d'un tunnel VPN IPsec site à site entre deux pare-feu pfSense pour relier deux réseaux de manière chiffrée.",
+    category: "technique",
+    categoryLabel: "Guide technique",
+    tags: ["pfSense", "VPN", "IPsec", "Pare-feu", "Sécurité"],
+    image: "./vpn-ipsec.png",
+    pdfPath: "./Fiche_procedure_VPN_site_a_site_pfSense.pdf",
+    downloadName: "Procedure-VPN-IPsec-pfSense.pdf",
+    pages: 8,
+    size: "1 Mo"
+  },
+  {
+    title: "Reverse proxy Nginx HTTPS",
+    description: "Procédure de mise en place d'un reverse proxy Nginx en HTTPS devant deux serveurs web Apache, avec un certificat TLS délivré par l'autorité de certification pfSense.",
+    category: "technique",
+    categoryLabel: "Guide technique",
+    tags: ["Nginx", "Apache", "HTTPS", "TLS", "Linux"],
+    image: "./reverse-proxy.png",
+    pdfPath: "./procédure reverse proxy.pdf",
+    downloadName: "Procedure-reverse-proxy-Nginx.pdf",
+    pages: 5,
+    size: "260 Ko"
   }
 ];
 
