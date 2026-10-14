@@ -57,6 +57,7 @@ const veilleList = document.getElementById("veille-list");
 const veilleStatus = document.getElementById("veille-status");
 const certFrFeedUrl = "https://www.cert.ssi.gouv.fr/feed/";
 const rssToJsonUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(certFrFeedUrl)}`;
+const maxVeilleArticles = 6;
 
 function getTextContent(value) {
   if (!value) return "";
@@ -66,8 +67,22 @@ function getTextContent(value) {
     .body.textContent.trim();
 }
 
+function parseFeedDate(value) {
+  // rss2json renvoie "AAAA-MM-JJ HH:MM:SS" (UTC), format que certains navigateurs ne savent pas lire.
+  const isoValue = /^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$/.test(value || "")
+    ? `${value.replace(" ", "T")}Z`
+    : value;
+  return new Date(isoValue);
+}
+
+function sortByMostRecent(articles) {
+  return [...articles]
+    .sort((a, b) => (parseFeedDate(b.date).getTime() || 0) - (parseFeedDate(a.date).getTime() || 0))
+    .slice(0, maxVeilleArticles);
+}
+
 function formatPublicationDate(value) {
-  const date = new Date(value);
+  const date = parseFeedDate(value);
   if (Number.isNaN(date.getTime())) return "Date non communiquée";
 
   return new Intl.DateTimeFormat("fr-FR", {
@@ -103,23 +118,8 @@ function createArticleCard(article) {
   return card;
 }
 
-function normalizeXmlArticles(xmlText) {
-  const xml = new DOMParser().parseFromString(xmlText, "application/xml");
-  if (xml.querySelector("parsererror")) throw new Error("Flux RSS invalide");
-
-  return [...xml.querySelectorAll("item, entry")]
-    .slice(0, 6)
-    .map((item) => ({
-      title: item.querySelector("title")?.textContent.trim(),
-      link: item.querySelector("link")?.textContent.trim() || item.querySelector("link")?.getAttribute("href"),
-      date: item.querySelector("pubDate, published, updated")?.textContent.trim(),
-      excerpt: getTextContent(item.querySelector("description, summary, content")?.textContent).slice(0, 220),
-    }))
-    .filter((article) => article.title && article.link);
-}
-
 function normalizeJsonArticles(data) {
-  return (data.items || []).slice(0, 6).map((item) => ({
+  return (data.items || []).map((item) => ({
     title: item.title,
     link: item.link,
     date: item.pubDate,
@@ -128,31 +128,30 @@ function normalizeJsonArticles(data) {
 }
 
 async function fetchCertFrArticles() {
-  try {
-    const directResponse = await fetch(certFrFeedUrl);
-    if (!directResponse.ok) throw new Error("Flux CERT-FR indisponible");
-
-    const articles = normalizeXmlArticles(await directResponse.text());
-    if (articles.length) return articles;
-  } catch (error) {
-    console.warn("Lecture directe du flux CERT-FR impossible, utilisation du relais RSS-to-JSON.");
+  // Source principale : veille-data.js, régénéré chaque jour par GitHub Actions.
+  const dailyData = window.VEILLE_DATA;
+  if (dailyData?.articles?.length) {
+    return { articles: sortByMostRecent(dailyData.articles), updatedAt: dailyData.updatedAt };
   }
 
+  // Secours : relais RSS-to-JSON (ne renvoie qu'une partie du flux).
   const proxyResponse = await fetch(rssToJsonUrl);
   if (!proxyResponse.ok) throw new Error("Relais RSS indisponible");
 
-  return normalizeJsonArticles(await proxyResponse.json());
+  return { articles: sortByMostRecent(normalizeJsonArticles(await proxyResponse.json())), updatedAt: null };
 }
 
 async function loadCertFrFeed() {
   if (!veilleList || !veilleStatus) return;
 
   try {
-    const articles = await fetchCertFrArticles();
+    const { articles, updatedAt } = await fetchCertFrArticles();
     if (!articles.length) throw new Error("Aucune actualité disponible");
 
     veilleList.replaceChildren(...articles.map(createArticleCard));
-    veilleStatus.remove();
+    veilleStatus.textContent = updatedAt
+      ? `Dernière mise à jour : ${formatPublicationDate(updatedAt)}`
+      : "";
   } catch (error) {
     veilleStatus.classList.add("is-error");
     veilleStatus.textContent = "Les actualités ne peuvent pas être chargées pour le moment. Consultez directement le site du CERT-FR.";
