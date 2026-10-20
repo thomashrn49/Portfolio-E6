@@ -1,43 +1,43 @@
 // Fichier genere automatiquement par scripts/update-veille.py - ne pas modifier a la main.
 window.VEILLE_DATA = {
-  "updatedAt": "2026-10-19T10:21:40+00:00",
+  "updatedAt": "2026-10-20T09:41:47+00:00",
   "source": "https://cert.cyber.gouv.fr/feed/",
   "articles": [
     {
-      "title": "Multiples vulnérabilités dans le noyau Linux de Red Hat (16 octobre 2026)",
-      "link": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1334/",
-      "date": "2026-10-16T00:00:00+00:00",
-      "excerpt": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et u"
+      "title": "Bulletin d'actualité CERTFR-2026-ACT-044 (19 octobre 2026)",
+      "link": "https://www.cert.ssi.gouv.fr/actualite/CERTFR-2026-ACT-044/",
+      "date": "2026-10-19T00:00:00+00:00",
+      "excerpt": "Ce bulletin d'actualité du CERT-FR revient sur les vulnérabilités significatives de la semaine passée pour souligner leurs criticités. Il ne remplace pas l'analyse de l'ensemble des avis et alertes publiés par le CERT-FR"
     },
     {
-      "title": "Multiples vulnérabilités dans les produits Microsoft (16 octobre 2026)",
-      "link": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1332/",
-      "date": "2026-10-16T00:00:00+00:00",
-      "excerpt": "De multiples vulnérabilités ont été découvertes dans les produits Microsoft. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un d"
+      "title": "Vulnérabilité dans Mattermost Server (19 octobre 2026)",
+      "link": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1338/",
+      "date": "2026-10-19T00:00:00+00:00",
+      "excerpt": "Une vulnérabilité a été découverte dans Mattermost Server. Elle permet à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur."
     },
     {
-      "title": "Multiples vulnérabilités dans le noyau Linux de SUSE (16 octobre 2026)",
-      "link": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1335/",
-      "date": "2026-10-16T00:00:00+00:00",
-      "excerpt": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Certaines d'entre elles permettent à un attaquant de provoquer une élévation de privilèges, un déni de service à distance et une atteinte à la "
+      "title": "Multiples vulnérabilités dans les produits F5 (19 octobre 2026)",
+      "link": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1341/",
+      "date": "2026-10-19T00:00:00+00:00",
+      "excerpt": "De multiples vulnérabilités ont été découvertes dans les produits F5. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une attei"
     },
     {
-      "title": "Multiples vulnérabilités dans les produits Mattermost (16 octobre 2026)",
-      "link": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1328/",
-      "date": "2026-10-16T00:00:00+00:00",
-      "excerpt": "De multiples vulnérabilités ont été découvertes dans les produits Mattermost. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur."
+      "title": "Multiples vulnérabilités dans Juniper Networks Session Smart Router (19 octobre 2026)",
+      "link": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1337/",
+      "date": "2026-10-19T00:00:00+00:00",
+      "excerpt": "De multiples vulnérabilités ont été découvertes dans Juniper Networks Session Smart Router. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur."
     },
     {
-      "title": "Multiples vulnérabilités dans les produits IBM (16 octobre 2026)",
-      "link": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1336/",
-      "date": "2026-10-16T00:00:00+00:00",
-      "excerpt": "De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de"
+      "title": "Multiples vulnérabilités dans Microsoft Edge (19 octobre 2026)",
+      "link": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1342/",
+      "date": "2026-10-19T00:00:00+00:00",
+      "excerpt": "De multiples vulnérabilités ont été découvertes dans Microsoft Edge. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et un problème de sécurité non spécifié par l'éditeur."
     },
     {
-      "title": "Multiples vulnérabilités dans le noyau Linux d'Ubuntu (16 octobre 2026)",
-      "link": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1333/",
-      "date": "2026-10-16T00:00:00+00:00",
-      "excerpt": "De multiples vulnérabilités ont été découvertes dans le noyau Linux d'Ubuntu. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et une"
+      "title": "Multiples vulnérabilités dans Stormshield Network Security (19 octobre 2026)",
+      "link": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1339/",
+      "date": "2026-10-19T00:00:00+00:00",
+      "excerpt": "De multiples vulnérabilités ont été découvertes dans Stormshield Network Security. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à l'intégrité des données, une injection de code indirecte à "
     }
   ]
 };
