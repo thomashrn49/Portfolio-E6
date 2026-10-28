@@ -1,43 +1,43 @@
 // Fichier genere automatiquement par scripts/update-veille.py - ne pas modifier a la main.
 window.VEILLE_DATA = {
-  "updatedAt": "2026-10-27T10:05:50+00:00",
+  "updatedAt": "2026-10-28T10:52:28+00:00",
   "source": "https://cert.cyber.gouv.fr/feed/",
   "articles": [
     {
-      "title": "Bulletin d'actualité CERTFR-2026-ACT-045 (26 octobre 2026)",
-      "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-045/",
-      "date": "2026-10-26T00:00:00+00:00",
-      "excerpt": "Ce bulletin d'actualité du CERT-FR revient sur les vulnérabilités significatives de la semaine passée pour souligner leurs criticités. Il ne remplace pas l'analyse de l'ensemble des avis et alertes publiés par le CERT-FR"
+      "title": "Multiples vulnérabilités dans Microsoft Edge (27 octobre 2026)",
+      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1395/",
+      "date": "2026-10-27T00:00:00+00:00",
+      "excerpt": "De multiples vulnérabilités ont été découvertes dans Microsoft Edge. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et une atteinte"
     },
     {
-      "title": "Multiples vulnérabilités dans les produits Tenable (26 octobre 2026)",
-      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1381/",
-      "date": "2026-10-26T00:00:00+00:00",
-      "excerpt": "De multiples vulnérabilités ont été découvertes dans les produits Tenable. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance."
+      "title": "Multiples vulnérabilités dans GLPI (27 octobre 2026)",
+      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1389/",
+      "date": "2026-10-27T00:00:00+00:00",
+      "excerpt": "De multiples vulnérabilités ont été découvertes dans GLPI. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à l'intégrité des données, une injection SQL (SQLi) et une injection de code indirect"
     },
     {
-      "title": "Vulnérabilité dans Citrix XenServer (26 octobre 2026)",
-      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1384/",
-      "date": "2026-10-26T00:00:00+00:00",
-      "excerpt": "Une vulnérabilité a été découverte dans Citrix XenServer. Elle permet à un attaquant de provoquer un contournement de la politique de sécurité."
+      "title": "Multiples vulnérabilités dans les produits Nextcloud (27 octobre 2026)",
+      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1392/",
+      "date": "2026-10-27T00:00:00+00:00",
+      "excerpt": "De multiples vulnérabilités ont été découvertes dans les produits Nextcloud. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et "
     },
     {
-      "title": "Multiples vulnérabilités dans Microsoft .Net (26 octobre 2026)",
-      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1382/",
-      "date": "2026-10-26T00:00:00+00:00",
-      "excerpt": "De multiples vulnérabilités ont été découvertes dans Microsoft .Net. Elles permettent à un attaquant de provoquer une élévation de privilèges."
+      "title": "Multiples vulnérabilités dans les produits Moxa (27 octobre 2026)",
+      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1393/",
+      "date": "2026-10-27T00:00:00+00:00",
+      "excerpt": "De multiples vulnérabilités ont été découvertes dans les produits Moxa. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, un déni de service à distance et une atteinte à la "
     },
     {
-      "title": "Multiples vulnérabilités dans les produits VMware (26 octobre 2026)",
-      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1385/",
-      "date": "2026-10-26T00:00:00+00:00",
-      "excerpt": "De multiples vulnérabilités ont été découvertes dans les produits VMware. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur."
+      "title": "Vulnérabilité dans les produits Palo Alto Networks (27 octobre 2026)",
+      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1396/",
+      "date": "2026-10-27T00:00:00+00:00",
+      "excerpt": "Une vulnérabilité a été découverte dans les produits Palo Alto Networks. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentia"
     },
     {
-      "title": "Vulnérabilité dans Mattermost Server (26 octobre 2026)",
-      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1380/",
-      "date": "2026-10-26T00:00:00+00:00",
-      "excerpt": "Une vulnérabilité a été découverte dans Mattermost Server. Elle permet à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur."
+      "title": "Multiples vulnérabilités dans Citrix NetScaler ADC et Gateway (27 octobre 2026)",
+      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1394/",
+      "date": "2026-10-27T00:00:00+00:00",
+      "excerpt": "De multiples vulnérabilités ont été découvertes dans Citrix NetScaler ADC et Gateway. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance."
     }
   ]
 };
