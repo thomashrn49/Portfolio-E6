@@ -186,6 +186,18 @@ const docsData = [
     downloadName: "Procedure-reverse-proxy-Nginx.pdf",
     pages: 5,
     size: "260 Ko"
+  },
+  {
+    title: "Opération Honeypot : Cowrie + Wazuh",
+    description: "Déploiement d'un honeypot SSH Cowrie sous Docker, confinement du leurre (iptables, sortie fermée par défaut), centralisation des journaux dans le SIEM Wazuh avec règles et alerte mail, puis analyse robot / humain d'attaques simulées.",
+    category: "technique",
+    categoryLabel: "Guide technique",
+    tags: ["Cowrie", "Wazuh", "SIEM", "Docker", "iptables", "Blue team"],
+    image: "./honeypot.png",
+    pdfPath: "./Fiche_procedure_Operation_Honeypot.pdf",
+    downloadName: "Procedure-Operation-Honeypot-Cowrie-Wazuh.pdf",
+    pages: 33,
+    size: "800 Ko"
   }
 ];
 
