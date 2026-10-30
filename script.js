@@ -210,6 +210,18 @@ const docsData = [
     downloadName: "Procedure-DHCP-Failover-ISC-KEA.pdf",
     pages: 19,
     size: "1,1 Mo"
+  },
+  {
+    title: "Réplication MariaDB maître ↔ maître derrière Nginx",
+    description: "Deux serveurs web Apache/PHP sous Debian 13 dont les bases MariaDB se répliquent dans les deux sens, reverse-proxy Nginx en HTTPS (certificat signé par une CA interne, TLS 1.3) avec répartition de charge, panne de réplication provoquée puis réparée, et prévention des collisions par auto_increment.",
+    category: "technique",
+    categoryLabel: "Guide technique",
+    tags: ["MariaDB", "Réplication", "Nginx", "HTTPS", "Load balancing", "Debian"],
+    image: "./replication-bdd.png",
+    pdfPath: "./Fiche_procedure_Replication_BDD_MariaDB.pdf",
+    downloadName: "Procedure-Replication-MariaDB-Nginx.pdf",
+    pages: 33,
+    size: "1 Mo"
   }
 ];
 
