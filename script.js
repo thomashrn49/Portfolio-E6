@@ -198,6 +198,18 @@ const docsData = [
     downloadName: "Procedure-Operation-Honeypot-Cowrie-Wazuh.pdf",
     pages: 33,
     size: "800 Ko"
+  },
+  {
+    title: "DHCP Failover sous Linux : ISC, KEA et relais",
+    description: "Serveur DHCP ISC puis KEA en haute disponibilité (hot-standby) sur Debian 12, relais DHCP sur un routeur Linux entre trois réseaux, pfSense (routes statiques, filtrage DNS/HTTP/S/ICMP), analyse DORA avec Wireshark et test de basculement.",
+    category: "technique",
+    categoryLabel: "Guide technique",
+    tags: ["DHCP", "KEA", "ISC", "Failover", "pfSense", "Wireshark"],
+    image: "./dhcp-failover.png",
+    pdfPath: "./Fiche_procedure_DHCP_Failover_KEA.pdf",
+    downloadName: "Procedure-DHCP-Failover-ISC-KEA.pdf",
+    pages: 19,
+    size: "1,1 Mo"
   }
 ];
 
