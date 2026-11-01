@@ -1,6 +1,6 @@
 // Fichier genere automatiquement par scripts/update-veille.py - ne pas modifier a la main.
 window.VEILLE_DATA = {
-  "updatedAt": "2026-10-31T10:38:15+00:00",
+  "updatedAt": "2026-11-01T11:32:21+00:00",
   "source": "https://cert.cyber.gouv.fr/feed/",
   "articles": [
     {
