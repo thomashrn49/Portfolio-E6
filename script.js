@@ -222,6 +222,18 @@ const docsData = [
     downloadName: "Procedure-Replication-MariaDB-Nginx.pdf",
     pages: 33,
     size: "1 Mo"
+    },
+  {
+    title: "DNS sous Linux : BIND9 principal, secondaire et DDNS",
+    description: "Serveur DNS BIND9 sur Debian 12 : zone directe et zones inverses, redirecteur, DNS secondaire alimenté par transfert de zone (AXFR/IXFR + NOTIFY), basculement observé avec Wireshark, mise à jour dynamique DHCP KEA → DNS signée par clé TSIG, intégration pfSense (Domain Overrides).",
+    category: "technique",
+    categoryLabel: "Guide technique",
+    tags: ["DNS", "BIND9", "AXFR", "DDNS", "TSIG", "KEA", "pfSense"],
+    image: "./dns-bind9.png",
+    pdfPath: "./Fiche_procedure_DNS_BIND9.pdf",
+    downloadName: "Procedure-DNS-BIND9-Secondaire-DDNS.pdf",
+    pages: 32,
+    size: "1,2 Mo"
   }
 ];
 
