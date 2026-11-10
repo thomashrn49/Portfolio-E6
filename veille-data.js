@@ -1,43 +1,43 @@
 // Fichier genere automatiquement par scripts/update-veille.py - ne pas modifier a la main.
 window.VEILLE_DATA = {
-  "updatedAt": "2026-11-09T13:26:35+00:00",
+  "updatedAt": "2026-11-10T13:05:36+00:00",
   "source": "https://cert.cyber.gouv.fr/feed/",
   "articles": [
     {
-      "title": "Multiples vulnérabilités dans le noyau Linux de SUSE (06 novembre 2026)",
-      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1470/",
-      "date": "2026-11-06T00:00:00+00:00",
-      "excerpt": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données, une atteinte à l'intégrité des do"
+      "title": "Activités cyber offensives ciblant la France menées par des acteurs iraniens liés au CGRI (09 novembre 2026)",
+      "link": "https://www.cert.cyber.gouv.fr/cti/CERTFR-2026-CTI-009/",
+      "date": "2026-11-09T00:00:00+00:00",
+      "excerpt": "Les membres du **Centre de Coordination des Crises Cyber (C4)** \\* ont observé plusieurs attaques à but de déstabilisation menées à l’encontre des intérêts français, qu’ils sont en mesure d’imputer **aux unités cyber-off"
     },
     {
-      "title": "Multiples vulnérabilités dans le noyau Linux d'Ubuntu (06 novembre 2026)",
-      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1469/",
-      "date": "2026-11-06T00:00:00+00:00",
-      "excerpt": "De multiples vulnérabilités ont été découvertes dans le noyau Linux d'Ubuntu. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une atteinte à l'intégrité des données et un "
+      "title": "Bulletin d'actualité CERTFR-2026-ACT-047 (09 novembre 2026)",
+      "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-047/",
+      "date": "2026-11-09T00:00:00+00:00",
+      "excerpt": "Ce bulletin d'actualité du CERT-FR revient sur les vulnérabilités significatives de la semaine passée pour souligner leurs criticités. Il ne remplace pas l'analyse de l'ensemble des avis et alertes publiés par le CERT-FR"
     },
     {
-      "title": "Vulnérabilité dans les produits VMware (06 novembre 2026)",
-      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1474/",
-      "date": "2026-11-06T00:00:00+00:00",
-      "excerpt": "Une vulnérabilité a été découverte dans les produits VMware. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance."
+      "title": "Vulnérabilité dans Moodle (09 novembre 2026)",
+      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1481/",
+      "date": "2026-11-09T00:00:00+00:00",
+      "excerpt": "Une vulnérabilité a été découverte dans Moodle. Elle permet à un attaquant de provoquer un contournement de la politique de sécurité."
     },
     {
-      "title": "Vulnérabilité dans les produits Mitel (06 novembre 2026)",
-      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1477/",
-      "date": "2026-11-06T00:00:00+00:00",
-      "excerpt": "Une vulnérabilité a été découverte dans les produits Mitel. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance."
+      "title": "Multiples vulnérabilités dans Xen (09 novembre 2026)",
+      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1485/",
+      "date": "2026-11-09T00:00:00+00:00",
+      "excerpt": "De multiples vulnérabilités ont été découvertes dans Xen. Elles permettent à un attaquant de provoquer une élévation de privilèges, une atteinte à la confidentialité des données et un déni de service."
     },
     {
-      "title": "Multiples vulnérabilités dans le noyau Linux de Red Hat (06 novembre 2026)",
-      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1471/",
-      "date": "2026-11-06T00:00:00+00:00",
-      "excerpt": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et u"
+      "title": "Multiples vulnérabilités dans les produits VMware (09 novembre 2026)",
+      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1486/",
+      "date": "2026-11-09T00:00:00+00:00",
+      "excerpt": "De multiples vulnérabilités ont été découvertes dans les produits VMware. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur."
     },
     {
-      "title": "Multiples vulnérabilités dans les produits Foxit (06 novembre 2026)",
-      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1478/",
-      "date": "2026-11-06T00:00:00+00:00",
-      "excerpt": "De multiples vulnérabilités ont été découvertes dans les produits Foxit. Elles permettent à un attaquant de provoquer une falsification de requêtes côté serveur (SSRF) et une injection de code indirecte à distance (XSS)."
+      "title": "Multiples vulnérabilités dans Sonicwall SonicOS (09 novembre 2026)",
+      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1483/",
+      "date": "2026-11-09T00:00:00+00:00",
+      "excerpt": "De multiples vulnérabilités ont été découvertes dans Sonicwall SonicOS. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et un co"
     }
   ]
 };
