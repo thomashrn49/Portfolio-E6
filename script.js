@@ -234,6 +234,18 @@ const docsData = [
     downloadName: "Procedure-DNS-BIND9-Secondaire-DDNS.pdf",
     pages: 32,
     size: "1,2 Mo"
+  },
+  {
+    title: "Serveur Web sécurisé en DMZ avec une PKI FreeIPA",
+    description: "Création d'une DMZ sur pfSense (alias, règles filtrées et journalisées), serveur AlmaLinux 9 hébergeant FreeIPA comme autorité de certification et Apache avec deux sites en HTTPS (hôte virtuel par nom sur 443, seconde adresse IP sur 444, SELinux, firewalld), certificats émis et renouvelés par certmonger, certificat du pfSense signé par la PKI, tests depuis des clients Linux et Windows.",
+    category: "technique",
+    categoryLabel: "Guide technique",
+    tags: ["DMZ", "pfSense", "FreeIPA", "PKI", "Apache", "HTTPS", "SELinux"],
+    image: "./web-dmz-freeipa.png",
+    pdfPath: "./Fiche_procedure_Web_DMZ_FreeIPA.pdf",
+    downloadName: "Procedure-Web-DMZ-FreeIPA-HTTPS.pdf",
+    pages: 44,
+    size: "2,6 Mo"
   }
 ];
 
