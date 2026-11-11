@@ -1,43 +1,43 @@
 // Fichier genere automatiquement par scripts/update-veille.py - ne pas modifier a la main.
 window.VEILLE_DATA = {
-  "updatedAt": "2026-11-10T13:05:36+00:00",
+  "updatedAt": "2026-11-11T12:15:16+00:00",
   "source": "https://cert.cyber.gouv.fr/feed/",
   "articles": [
     {
-      "title": "Activités cyber offensives ciblant la France menées par des acteurs iraniens liés au CGRI (09 novembre 2026)",
-      "link": "https://www.cert.cyber.gouv.fr/cti/CERTFR-2026-CTI-009/",
-      "date": "2026-11-09T00:00:00+00:00",
-      "excerpt": "Les membres du **Centre de Coordination des Crises Cyber (C4)** \\* ont observé plusieurs attaques à but de déstabilisation menées à l’encontre des intérêts français, qu’ils sont en mesure d’imputer **aux unités cyber-off"
+      "title": "Multiples vulnérabilités dans les produits SAP (10 novembre 2026)",
+      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1497/",
+      "date": "2026-11-10T00:00:00+00:00",
+      "excerpt": "De multiples vulnérabilités ont été découvertes dans les produits SAP. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atte"
     },
     {
-      "title": "Bulletin d'actualité CERTFR-2026-ACT-047 (09 novembre 2026)",
-      "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-047/",
-      "date": "2026-11-09T00:00:00+00:00",
-      "excerpt": "Ce bulletin d'actualité du CERT-FR revient sur les vulnérabilités significatives de la semaine passée pour souligner leurs criticités. Il ne remplace pas l'analyse de l'ensemble des avis et alertes publiés par le CERT-FR"
+      "title": "Vulnérabilité dans Atlassian Confluence Data Center (10 novembre 2026)",
+      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1492/",
+      "date": "2026-11-10T00:00:00+00:00",
+      "excerpt": "Une vulnérabilité a été découverte dans Atlassian Confluence Data Center. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance."
     },
     {
-      "title": "Vulnérabilité dans Moodle (09 novembre 2026)",
-      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1481/",
-      "date": "2026-11-09T00:00:00+00:00",
-      "excerpt": "Une vulnérabilité a été découverte dans Moodle. Elle permet à un attaquant de provoquer un contournement de la politique de sécurité."
+      "title": "Multiples vulnérabilités dans Roundcube (10 novembre 2026)",
+      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1489/",
+      "date": "2026-11-10T00:00:00+00:00",
+      "excerpt": "De multiples vulnérabilités ont été découvertes dans Roundcube. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une falsification de requêtes côté serveur (SSRF) et une in"
     },
     {
-      "title": "Multiples vulnérabilités dans Xen (09 novembre 2026)",
-      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1485/",
-      "date": "2026-11-09T00:00:00+00:00",
-      "excerpt": "De multiples vulnérabilités ont été découvertes dans Xen. Elles permettent à un attaquant de provoquer une élévation de privilèges, une atteinte à la confidentialité des données et un déni de service."
+      "title": "Multiples vulnérabilités dans Synology DSM (10 novembre 2026)",
+      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1493/",
+      "date": "2026-11-10T00:00:00+00:00",
+      "excerpt": "De multiples vulnérabilités ont été découvertes dans Synology DSM. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une falsif"
     },
     {
-      "title": "Multiples vulnérabilités dans les produits VMware (09 novembre 2026)",
-      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1486/",
-      "date": "2026-11-09T00:00:00+00:00",
-      "excerpt": "De multiples vulnérabilités ont été découvertes dans les produits VMware. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur."
+      "title": "Multiples vulnérabilités dans Siemens SIMATIC (10 novembre 2026)",
+      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1495/",
+      "date": "2026-11-10T00:00:00+00:00",
+      "excerpt": "De multiples vulnérabilités ont été découvertes dans Siemens SIMATIC. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et un contournement de la politique de sécurité."
     },
     {
-      "title": "Multiples vulnérabilités dans Sonicwall SonicOS (09 novembre 2026)",
-      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1483/",
-      "date": "2026-11-09T00:00:00+00:00",
-      "excerpt": "De multiples vulnérabilités ont été découvertes dans Sonicwall SonicOS. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et un co"
+      "title": "Multiples vulnérabilités dans les produits Apple (10 novembre 2026)",
+      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1487/",
+      "date": "2026-11-10T00:00:00+00:00",
+      "excerpt": "De multiples vulnérabilités ont été découvertes dans les produits Apple. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données, une atteinte à l'intégrité des donnée"
     }
   ]
 };
