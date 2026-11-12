@@ -1,8 +1,14 @@
 // Fichier genere automatiquement par scripts/update-veille.py - ne pas modifier a la main.
 window.VEILLE_DATA = {
-  "updatedAt": "2026-11-11T12:15:16+00:00",
+  "updatedAt": "2026-11-12T13:21:42+00:00",
   "source": "https://cert.cyber.gouv.fr/feed/",
   "articles": [
+    {
+      "title": "Point de situation de l’opération REACTIV – octobre 2026 (12 novembre 2026)",
+      "link": "https://www.cert.cyber.gouv.fr/cti/CERTFR-2026-CTI-010/",
+      "date": "2026-11-12T00:00:00+00:00",
+      "excerpt": "Face à l’intensification des attaques cybercriminelles liées à des violations de données affectant les services de l’État, le Premier ministre a demandé le 1er septembre 2026 à l’Agence nationale de la sécurité des systè"
+    },
     {
       "title": "Multiples vulnérabilités dans les produits SAP (10 novembre 2026)",
       "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1497/",
@@ -32,12 +38,6 @@ window.VEILLE_DATA = {
       "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1495/",
       "date": "2026-11-10T00:00:00+00:00",
       "excerpt": "De multiples vulnérabilités ont été découvertes dans Siemens SIMATIC. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et un contournement de la politique de sécurité."
-    },
-    {
-      "title": "Multiples vulnérabilités dans les produits Apple (10 novembre 2026)",
-      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1487/",
-      "date": "2026-11-10T00:00:00+00:00",
-      "excerpt": "De multiples vulnérabilités ont été découvertes dans les produits Apple. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données, une atteinte à l'intégrité des donnée"
     }
   ]
 };
