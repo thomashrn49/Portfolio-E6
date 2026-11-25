@@ -164,6 +164,18 @@ loadCertFrFeed();
 // Pour ajouter un document : déposer le PDF dans le dossier du site puis ajouter un objet ci-dessous.
 const docsData = [
   {
+    title: "Traiter un ticket hotline avec Artis",
+    description: "Réalisation professionnelle en alternance (hotline infrastructure, support N1) : connexion SSO Okta + MFA, filtrage du pot commun, priorisation des demandes, démarrage de l'intervention, diagnostic avec le client, rédaction du CRIT, clôture ou escalade N2, et exemple réel d'accès refusé à Sage 100 (login SQL orphelin).",
+    category: "stage",
+    categoryLabel: "Stage / Alternance",
+    tags: ["Hotline", "Support N1", "Ticketing", "Artis", "Okta MFA", "Active Directory"],
+    image: "./hotline-artis.png",
+    pdfPath: "./Fiche_procedure_Hotline_Artis.pdf",
+    downloadName: "Procedure-Ticket-Hotline-Artis.pdf",
+    pages: 7,
+    size: "2,3 Mo"
+  },
+  {
     title: "VPN site à site IPsec",
     description: "Procédure de mise en place d'un tunnel VPN IPsec site à site entre deux pare-feu pfSense pour relier deux réseaux de manière chiffrée.",
     category: "technique",
