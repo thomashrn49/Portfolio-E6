@@ -164,6 +164,18 @@ loadCertFrFeed();
 // Pour ajouter un document : déposer le PDF dans le dossier du site puis ajouter un objet ci-dessous.
 const docsData = [
   {
+    title: "Relation d'approbation Active Directory",
+    description: "Procédure de mise en place d'une relation d'approbation externe sélective entre deux domaines Active Directory sous Windows Server 2025, sur deux réseaux isolés reliés par pfSense : création des forêts, redirecteurs DNS conditionnels, création et validation du trust, authentification sélective.",
+    category: "technique",
+    categoryLabel: "Guide technique",
+    tags: ["Active Directory", "Trust", "Windows Server 2025", "DNS", "pfSense"],
+    image: "./approbation-ad.png",
+    pdfPath: "./Fiche_procedure_Approbation_AD.pdf",
+    downloadName: "Procedure-Approbation-AD.pdf",
+    pages: 16,
+    size: "3,5 Mo"
+  },
+  {
     title: "Traiter un ticket hotline avec Artis",
     description: "Réalisation professionnelle en alternance (hotline infrastructure, support N1) : connexion SSO Okta + MFA, filtrage du pot commun, priorisation des demandes, démarrage de l'intervention, diagnostic avec le client, rédaction du CRIT, clôture ou escalade N2, et exemple réel d'accès refusé à Sage 100 (login SQL orphelin).",
     category: "stage",
