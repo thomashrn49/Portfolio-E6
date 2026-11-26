@@ -182,6 +182,7 @@ const docsData = [
     categoryLabel: "Stage / Alternance",
     tags: ["Hotline", "Support N1", "Ticketing", "Artis", "Okta MFA", "Active Directory"],
     image: "./hotline-artis.png",
+    cover: true,
     pdfPath: "./Fiche_procedure_Hotline_Artis.pdf",
     downloadName: "Procedure-Ticket-Hotline-Artis.pdf",
     pages: 7,
@@ -281,7 +282,7 @@ function createDocsCard(doc) {
 
   return `
     <article class="docs-card" data-category="${doc.category}">
-      <div class="docs-card-image">
+      <div class="docs-card-image${doc.cover ? " docs-card-image--cover" : ""}">
         <img src="${encodeURI(doc.image)}" alt="" loading="lazy">
         <span class="docs-card-category">${doc.categoryLabel}</span>
       </div>
