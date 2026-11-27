@@ -1,43 +1,43 @@
 // Fichier genere automatiquement par scripts/update-veille.py - ne pas modifier a la main.
 window.VEILLE_DATA = {
-  "updatedAt": "2026-11-26T14:33:41+00:00",
+  "updatedAt": "2026-11-27T14:27:46+00:00",
   "source": "https://cert.cyber.gouv.fr/feed/",
   "articles": [
     {
-      "title": "Recommandations de sécurisation des liaisons inter-sites (25 novembre 2026)",
-      "link": "https://www.cert.cyber.gouv.fr/dur/CERTFR-2026-DUR-001/",
-      "date": "2026-11-25T00:00:00+00:00",
-      "excerpt": "Objet : Recommandations de sécurisation des liaisons inter-sites, à destination des clients de ces offres. Annexe : Liens et références Depuis plusieurs années, l’Agence nationale de la sécurité des systèmes d'informatio"
+      "title": "Vulnérabilité dans Drupal (26 novembre 2026)",
+      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1623/",
+      "date": "2026-11-26T00:00:00+00:00",
+      "excerpt": "Une vulnérabilité a été découverte dans Drupal. Elle permet à un attaquant de provoquer un contournement de la politique de sécurité. Drupal indique que la vulnérabilité CVE-2026-136716 est activement exploitée."
     },
     {
-      "title": "Multiples vulnérabilités dans les produits Mozilla (25 novembre 2026)",
-      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1616/",
-      "date": "2026-11-25T00:00:00+00:00",
-      "excerpt": "De multiples vulnérabilités ont été découvertes dans les produits Mozilla. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une élévation de privilèges et une atteinte à la"
+      "title": "Multiples vulnérabilités dans les produits Tenable (26 novembre 2026)",
+      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1625/",
+      "date": "2026-11-26T00:00:00+00:00",
+      "excerpt": "De multiples vulnérabilités ont été découvertes dans les produits Tenable. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une injection SQL (SQLi) et un contou"
     },
     {
-      "title": "Vulnérabilité dans Microsoft Office (25 novembre 2026)",
-      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1620/",
-      "date": "2026-11-25T00:00:00+00:00",
-      "excerpt": "Une vulnérabilité a été découverte dans Microsoft Office. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance."
+      "title": "Multiples vulnérabilités dans les produits NetApp (26 novembre 2026)",
+      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1626/",
+      "date": "2026-11-26T00:00:00+00:00",
+      "excerpt": "De multiples vulnérabilités ont été découvertes dans les produits NetApp. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une"
     },
     {
-      "title": "Multiples vulnérabilités dans les produits VMware (25 novembre 2026)",
-      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1622/",
-      "date": "2026-11-25T00:00:00+00:00",
-      "excerpt": "De multiples vulnérabilités ont été découvertes dans les produits VMware. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni"
+      "title": "Vulnérabilité dans Mattermost Server (26 novembre 2026)",
+      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1627/",
+      "date": "2026-11-26T00:00:00+00:00",
+      "excerpt": "Une vulnérabilité a été découverte dans Mattermost Server. Elle permet à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur."
     },
     {
-      "title": "Vulnérabilité dans les produits Schneider Electric (25 novembre 2026)",
-      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1618/",
-      "date": "2026-11-25T00:00:00+00:00",
-      "excerpt": "Une vulnérabilité a été découverte dans les produits Schneider Electric. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance et un déni de service à distance."
+      "title": "Multiples vulnérabilités dans GitLab (26 novembre 2026)",
+      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1624/",
+      "date": "2026-11-26T00:00:00+00:00",
+      "excerpt": "De multiples vulnérabilités ont été découvertes dans GitLab. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la "
     },
     {
-      "title": "Multiples vulnérabilités dans Symfony (25 novembre 2026)",
-      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1619/",
-      "date": "2026-11-25T00:00:00+00:00",
-      "excerpt": "De multiples vulnérabilités ont été découvertes dans Symfony. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et un contournemen"
+      "title": "Multiples vulnérabilités dans les produits Veeam (26 novembre 2026)",
+      "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1629/",
+      "date": "2026-11-26T00:00:00+00:00",
+      "excerpt": "De multiples vulnérabilités ont été découvertes dans les produits Veeam. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance. L'éditeur fournit également une mesure de contournement p"
     }
   ]
 };
